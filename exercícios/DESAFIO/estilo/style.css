@@ -1,0 +1,47 @@
+
+
+body{
+    background-color: rgb(238, 197, 232);
+    font-size: 16px;
+    text-align: center;
+
+ }
+
+ main{
+   min-width: 300px;
+   max-width: 1000px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 5px 5px 15px #f589897c;
+   padding: 10px;
+   margin: auto;
+ }
+ 
+span{
+  font-weight: bold;
+  padding-left: 8px; 
+}
+
+span:hover{
+   color: black;
+}
+
+ h1{
+    color: rgb(189, 27, 127);
+    font-family:sans-serif;
+    text-align: center;
+ }
+ h2{
+    color: rgb(182, 68, 131);
+    background-color: rgb(245, 205, 240);
+ }
+ p{
+    text-align: center;
+    font-size: 16px;
+ }
+ ul{
+    text-align: justify;
+    color: rgb(38, 10, 65);
+ }
+
+ 

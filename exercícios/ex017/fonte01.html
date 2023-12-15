@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Trabalhando com fontes</title>
+    <style>
+        body{
+            font-family: 'work Sans', Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas
+            cm, mm, in(polegada), px, pt, pc
+
+            Medidas Relativas
+            em (tamanho atual da fonte): normalmente o mais utilizado
+            ex (altura x de uma fonte)
+            rem (igual ao em, mas relativo à fonte configurada no 'body' )
+            vw (largura do viewport,tamanho da sua tela)
+            vh (altura do viewport)
+            16px geralmente = 1em
+            %
+            
+            Recomenda-se usar o em e o px
+            */
+            font-size: 1em;
+            /*
+            font-weight:bolder;
+            font-style: italic;
+            text-decoration: none;*/
+
+            /* lighter normal bold bolder */
+            /*weight(peso), height(altura), width(largura)*/
+        }
+
+        h1{
+           /*font-family: 'work Sans', sans-serif;
+           font-weight:bolder ;
+           font-size: 3em;
+           font-style: italic;*/
+           /* shorthand font
+
+             font-style -> font-weight-> font-size-> font-family
+           */
+           font:italic bolder 3em 'work Sans', Sans-serif;
+        }
+        h2{
+            font: bold 2em 'work sans';
+
+        }
+    </style>
+</head>
+<body >
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus in obcaecati nulla deserunt nihil provident error quo enim quam totam, excepturi, esse voluptatum, a nemo alias assumenda quae eum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae voluptas totam in voluptatibus adipisci cupiditate eveniet dolore, enim quam.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minus sunt ipsum odit consequuntur eos ratione corporis iusto magnam explicabo eligendi, provident voluptas magni cumque minima expedita nemo, suscipit laudantium. Facilis, nostrum possimus numquam ducimus sapiente minima aperiam autem beatae repellat, officia voluptas tenetur. Iste ipsa rem dolores blanditiis corporis!</p>
+</body>
+</html>
