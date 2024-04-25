@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+body{
+max-width: 1600px;
+padding: 0px;
+margin: 0px;
+}
+
+nav{
+background-color: black;
+height: 170px;
+}
+
+
+nav > h1{
+ margin: 0px;
+ padding-top: 30px;
+ color: white;
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 4em; 
+}
+
+nav > p{
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav > p > .decoracao{
+    text-decoration: none;
+    color: white;
+}
+
+nav > p > .decoracao:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+
+.caixatexto{
+    background-color: lightgrey;
+    padding: 10px;  
+}
+
+.texto{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 1em;
+    font-weight: bold;
+   
+}
+
+.caixaimagem{
+    width: 220px;
+    height: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 25px;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #000f0063;
+    border-radius: 5px;
+}
+.imagem1{
+
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+
+
+}
+
+.imagem2{
+
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+
+
+}
