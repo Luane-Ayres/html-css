@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+     --fonte1: verdana, Geneva, Tahoma, sans-serif;
+     --fonte2:  "Sriracha", cursive;
+     --fonte3: "Passion One", sans-serif;
+
+      }
+      
+
+
+
 body{
 max-width: 1600px;
 padding: 0px;
@@ -39,29 +52,29 @@ nav > p > .decoracao:hover{
 
 
 .caixatexto{
-    background-color: lightgrey;
+    background-color: white;
     padding: 10px;  
 }
 
 .texto{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--fonte3);
     margin-left: 15px;
     padding-bottom: 10px;
     padding-left: 10px;
-    font-size: 1em;
+    font-size: clamp(1em, 1em + 0.5vw, 2em);
     font-weight: bold;
    
 }
 
 .caixaimagem{
     width: 220px;
-    height: 300px;
+    height: auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 25px;
     margin-right: auto;
     padding-bottom: 10px;
     padding-left: 10px;
-    font-size: 1em;
+    font-size: clamp(1em, 1em + 0.5vw, 1.5em);
     font-weight: bold;
     color: white;
     background-color: #000f0063;
@@ -78,8 +91,6 @@ nav > p > .decoracao:hover{
     background-position: center;
     background-repeat: repeat-y;
     background-attachment: fixed;
-
-
 }
 
 .imagem2{
@@ -93,6 +104,13 @@ nav > p > .decoracao:hover{
     background-position: center;
     background-repeat: repeat-y;
     background-attachment: fixed;
+}
 
+.footer{
 
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
