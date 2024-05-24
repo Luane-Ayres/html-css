@@ -3,89 +3,97 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+
+/*text-transform: uppercase - Transforma o texto em texto grande (caixa alta) */
+
+
 :root{
      --fonte1: verdana, Geneva, Tahoma, sans-serif;
      --fonte2:  "Sriracha", cursive;
      --fonte3: "Passion One", sans-serif;
 
       }
-      
 
 
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
+  
 body{
-max-width: 1600px;
-padding: 0px;
-margin: 0px;
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
-nav{
+header{
 background-color: black;
-height: 170px;
+color: white;
+text-align: center;
+
 }
 
 
-nav > h1{
- margin: 0px;
- padding-top: 30px;
+header > h1{
+ padding-top: 50px;
  color: white;
+ font-variant: small-caps;
  text-align: center;
- font-family: Arial, Helvetica, sans-serif;
- font-size: 4em; 
+ font-family: var(--fonte3);
+ font-size: 5em; 
 }
 
-nav > p{
+header > p{
+    padding-bottom: 50px;
     color: white;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav > p > .decoracao{
+header > p > a{
     text-decoration: none;
+    font-weight: bolder;
     color: white;
 }
 
-nav > p > .decoracao:hover{
+header > p > a:hover{
     text-decoration: underline;
     color: red;
 }
 
 
-.caixatexto{
+Section{
+   
+   padding-top:  10vh;
+   padding-bottom: 10vh;
+   padding-left: 30px;
+
+}
+
+Section > p{
+    line-height: 2em;
+    padding-left: 30px;
+}  
+
+.fundobranco{
     background-color: white;
+    color: black;
     padding: 10px;  
 }
 
-.texto{
-    font-family: var(--fonte3);
-    margin-left: 15px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    font-size: clamp(1em, 1em + 0.5vw, 2em);
-    font-weight: bold;
-   
+Section.fundobranco{
+    background-color: white;
+    color: black;
 }
 
-.caixaimagem{
-    width: 220px;
-    height: auto;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 25px;
-    margin-right: auto;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    font-size: clamp(1em, 1em + 0.5vw, 1.5em);
-    font-weight: bold;
+
+
+Section.imagem{
+    background-color: black;
     color: white;
-    background-color: #000f0063;
-    border-radius: 5px;
 }
-.imagem1{
 
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.imagem{
+    
     background-image: url('imagens/background001.jpg');
     background-size: cover;
     background-position: center;
@@ -95,10 +103,6 @@ nav > p > .decoracao:hover{
 
 .imagem2{
 
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-image: url('imagens/background002.jpg');
     background-size: cover;
     background-position: center;
@@ -111,6 +115,16 @@ nav > p > .decoracao:hover{
     color: white;
     background-color: black;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    padding: 10px;
+   
+}
+
+.footer > a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer > a:hover{
+    text-decoration: underline;
+    color: red;
 }
