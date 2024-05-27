@@ -71,7 +71,7 @@ header > p > a{
 
 header > p > a:hover{
     text-decoration: underline;
-    color: red;
+    color: rgb(179, 4, 4);
 }
 
 
@@ -119,8 +119,9 @@ Section.imagem > p{
     line-height: 1.5em;
     padding: 5px;
     border-radius: 4px;
-    background-color: rgba(76, 75, 75, 0.312);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.183);
+    text-shadow: 1px 1px 0px black;
+    color:rgb(255, 255, 255);
     
 }
 
@@ -138,9 +139,11 @@ Section.imagem2 > p{
     display: inline-block;
     line-height: 1.5em;
     padding: 5px;
+    padding-bottom: 10px;
     border-radius: 4px;
-    background-color: rgba(103, 99, 99, 0.4);
-    color:black;
+    background-color: rgba(0, 0, 0, 0.564);
+    text-shadow: 1px 1px 0px black;
+    color:rgb(255, 255, 255);
     
 }
 
