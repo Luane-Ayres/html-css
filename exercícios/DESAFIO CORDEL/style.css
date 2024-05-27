@@ -4,13 +4,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 
+
 /*text-transform: uppercase - Transforma o texto em texto grande (caixa alta) */
 
+/*
+Fonte 1: Padrão
+Fonte 2: Fonte do cabeçalho
+Fonte 3: Texto do poema
+*/
+
+/*
+10vw: 10% baseado na largura da tela
+A tela aumenta, a fonte aumenta.
+A tela diminui, a fonte diminui.
+A melhor prática, no entanto, é usar o
+media querie, que configura a tela de forma
+correta.
+*/
 
 :root{
      --fonte1: verdana, Geneva, Tahoma, sans-serif;
-     --fonte2:  "Sriracha", cursive;
-     --fonte3: "Passion One", sans-serif;
+     --fonte2:  "Passion One", cursive;
+     --fonte3: "Sriracha", cursive;
 
       }
 
@@ -18,11 +33,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
   
 body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -38,15 +55,15 @@ header > h1{
  color: white;
  font-variant: small-caps;
  text-align: center;
- font-family: var(--fonte3);
- font-size: 5em; 
+ font-family: var(--fonte2);
+ font-size: 10vw; 
 }
 
 header > p{
     padding-bottom: 50px;
     color: white;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--fonte1)
 }
 
 header > p > a{
@@ -66,11 +83,14 @@ Section{
    padding-top:  10vh;
    padding-bottom: 10vh;
    padding-left: 30px;
+   font-family: var(--fonte3);
+   font-size: 1.5em;
+   font-weight: bold;
 
 }
 
 Section > p{
-    font-family: var(--fonte2);
+    
     line-height: 2em;
     padding-left: 30px;
 }  
@@ -87,13 +107,14 @@ Section.fundobranco{
 }
 
 
-
 Section.imagem > p{
-    width: 400px;
+    display: inline-block;
     line-height: 2em;
-    padding-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(76, 75, 75, 0.312);
     color: white;
-    font-family: var(--fonte2);
+    
 }
 
 .imagem{
@@ -114,10 +135,14 @@ Section.imagem > p{
     background-attachment: fixed;
 }
 
-Section.imagem2{
+
+Section.imagem2 > p{
+    display: inline-block;
     line-height: 2em;
-    padding-left: 10px;
-    font-family: var(--fonte2);
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(76, 75, 75, 0.312);
+    color:black;
     
 }
 
