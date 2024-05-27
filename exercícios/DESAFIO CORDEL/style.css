@@ -112,6 +112,7 @@ Section.fundobranco{
     background-position: center;
     background-repeat: repeat-y;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.494);
 }
 
 Section.imagem > p{
@@ -132,6 +133,7 @@ Section.imagem > p{
     background-position: center;
     background-repeat: repeat-y;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.494);
 }
 
 
