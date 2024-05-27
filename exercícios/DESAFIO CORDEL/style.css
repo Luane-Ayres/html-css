@@ -104,6 +104,15 @@ Section.fundobranco{
 }
 
 
+.imagem{
+
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
 Section.imagem > p{
     display: inline-block;
     line-height: 1.5em;
@@ -112,15 +121,6 @@ Section.imagem > p{
     background-color: rgba(76, 75, 75, 0.312);
     color: white;
     
-}
-
-.imagem{
-
-    background-image: url('imagens/background001.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
 }
 
 .imagem2{
