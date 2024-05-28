@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            padding-left: 30px;
+            
+        }
+        table{
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.159);
+            width: 400px;
+            height: 200px;    
+        }
+        td{
+            border: 1px  solid black;
+            text-align: center;
+            font-weight: bold;
+        }
+        td:hover{
+            color: red;
+        }
+        .amarelo{
+            background: rgb(238, 238, 132);
+        }
+        .verde{
+            background-color: rgb(154, 236, 154);
+        }
+        .vermelho{
+            background-color: rgb(232, 149, 149);
+        }
+        .azul{
+            background-color: rgb(165, 165, 244);
+        }
+        
+    </style>
+</head>
+<body>
+        <!--
+            HIERARQUIA DE TABELAS (SIMPLES)
+            TABLE = TABELA
+                TABLE ROW = LINHA DE TABELA (TR)
+                TABLE HEADER = CABEÇALHO DE TABELA (TH)
+                TABLE DATA = DADO DE TABELA (TD)
+             
+            Pra criar várias tr e td de uma vez, é só usar o  * .
+    
+            Exemplo : 
+            <table>
+    
+            tr*4>td*3
+    
+            </table>
+    
+            já cria 4 tr e 3 td-->
+    
+        <h1>Minha primeira tabela</h1>
+        <table>
+            <tr class="amarelo"> <!-- PRIMEIRA LINHA -->
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>     
+            </tr>
+            <tr class="verde"> <!-- SEGUNDA LINHA -->
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+            <tr class="vermelho"> <!-- TERCEIRA LINHA -->
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr
+            class="azul"> <!-- QUARTA LINHA -->
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+</body>
+</html>
