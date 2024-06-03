@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+table{
+    border: 1px  solid black;
+    width: 600px;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: red;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th{
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.estilodata{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td{
+    background-color: rgba(238, 213, 217, 0.706);
+    border: 1px  solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+abbr{
+    text-decoration: none;
+}
+abbr:hover{
+    font-weight: bold;
+    color: red;
+}
