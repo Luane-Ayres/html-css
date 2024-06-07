@@ -12,9 +12,15 @@
     table{
         border-collapse: collapse;
     }
+    caption{
+        margin: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
     th{
         border:1px solid black;
         background-color: lightgrey;
+        padding: 5px;
     }
     td{
         border: 1px solid black;
@@ -44,16 +50,17 @@
 </head>
 <body>
     <table>
+        <caption>Filmes favoritos</caption>
         <thead>
             <tr>
                 <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Filmes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                    <th rowspan="3" class="mulher">Mulheres</td>
+                    <th rowspan="3"class="mulher" scope="rowgroup">Mulheres</td>
                     <td class="feminino">Ana Maria Santos</td>
                     <td class="filmes">Alien</td>
                     <td class="filmes">Rambo</td>
@@ -71,7 +78,7 @@
                     <td class="filmes">Matrix</td>
                     <td class="filmes">Big Hero</td>
             </tr>
-                    <th rowspan="3" class="homem">Homens</td>
+                    <th rowspan="3" class="homem" scope="rowgroup">Homens</td>
                     <td class="masculino">Bruno Mendonça</td>
                     <td class="filmes">Intocáveis</td>
                     <td class="filmes">Amnésia</td>
@@ -90,6 +97,12 @@
                     <td class="filmes">Toy Story</td>
            </tr>
       </tbody>
-</table>
+      <tfoot>
+            <tr>
+                    <th colspan="4" scope="row">Total</th>
+                    <th>0000</th>
+           </tr>
+      </tfoot>
+   </table>
 </body>
 </html>
