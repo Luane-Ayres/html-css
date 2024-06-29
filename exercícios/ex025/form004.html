@@ -3,23 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            width: 300px;
+            height: 200px;
+            border-radius: 4px;
+        }
+        legend{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
     <title>Formulário</title>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <p>
-        <label for="iemail">Email</label>
-        <input type="email" name="email" id="iemail">
-    </p>
+    <form action="cadastro.php"  method="get" autocomplete="on">
 
-    <p>
-        <label for="itel">Telefone</label>
-        <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4$}" required>
-    </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="Inome">Nome</label>
+                <input type="text" name="Nome" id="Inome" placeholder="Digite o seu nome">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" placeholder="Digite o seu email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[0-9]{4,5}-[0-9]{4}$" required placeholder="(xx)xxxx-xxxx">
+            </p>
+            <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata">
+                   </p>
+            <p>
+                <input  type="submit" value="Enviar">
+                <input  type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    
+    </form>
+    <!--
+            
+            ATRIBITO PATTERN:
 
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+            O atributo pattern nos formulários em HTML 5 permitem que aquele formulário seja validado através de uma Expressão Regular.
+
+            As expressões regulares são um forma de validar expressões textuais que seguem algum tipo de padrão e ao aplicar essa expressão dentro do parâmetro pattern o HTML vai garantir que esse padrão é satisfeito.
+            
+            
+            COMO COLOCAR TELEFONE NA CAIXA
+             
+            USAR A TAG <PATTERN> PARA COLOCAR O COMANDO:
+            
+                "^[0-9]{4}-[0-9]{4}$"
+            
+            *Os números dentro do colchete [0-9] determinam o limite de números escolhidos.
+
+            *O número dentro das chaves {4} determinam a quatidade de dígitos.
+
+            PARA COLOCAR DD:
+
+            "^\(\d{2}}\d)\d{4}$"
+               
+            * \(\d{2\}) - Abre parênteses + 2 dígitos + fecha parênteses
+
+            Exemplo de placa de trânsito:
+
+            "^[A-Za-z]{3}-[0-9}{4}$"
+
+            TAG <FIELDSET>
+
+            *Cria uma borda ao redor do formulário
+
+            TAG <LEGEND>
+
+             *Você consegue agrupar   
+            
+            -->
+        
 </body>
 </html>
