@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento output em formulários HTML</title>
+</head>
+<body>
+    <h1>Exercício de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="In1">Número 1:</label>
+            <input type="number" name="n1" id="In1"  min="0" max="50" required oninput="Isoma.innerHTML = Number(In1.value) + Number(In2.value)">
+        </p>
+
+        <p>
+            <label for="In2">Número 2:</label>
+            <input type="number" name="n2" id="In2" min="0" max="50" required oninput="Isoma.innerHTML = Number(In1.value) + Number(In2.value)" >
+        </p>
+
+        <p>
+            <label for="Isoma">Soma:</label>
+            <output  name="soma"  id="Isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <!--O <output></output> se trata de um elemento de saída, utilizado somente para fins de exibição. É um elemento no qual um processo programado pode injetar os resultados de um cálculo ou o resultado de uma ação do usuário por exemplo.
+
+       Por ser um elemento de saída, isso significa que: Quando utilizado, a tag de formulário output deve estar associada a um script. O resultado gerado por esse script, como um número por exemplo, deve ser renderizado no elemento output.
+       
+       
+       O Output não é pra calcular e enviar e sim pra calcular e mostrar coisas na tela.
+       
+       -->
+
+    </form>
+</body>
+</html>
