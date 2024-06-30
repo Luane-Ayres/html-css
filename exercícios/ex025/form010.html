@@ -9,7 +9,7 @@
     <form action="cadastro.php" method="get" autocomplete="on">
     <p>
         <label for="Iano">Em que ano você nasceu?</label>
-        <input type="number" name="ano" id="Iano" min="1990" max="2020" value="2000" oninput="calcidade">
+        <input type="number" name="ano" id="Iano" min="1990" max="2020" value="2000" oninput="calcIdade()">
     </p>
     <p>
         <label for="Iidade">Sua idade é:</label>
@@ -22,7 +22,7 @@
     </p>
     </form>
     <script>
-        function calcidade(){
+        function calcIdade(){
             let atual = new Date().getFullYear()
             Iidade.innerHTML = Number(atual) - Number(Iano.value)
         }
