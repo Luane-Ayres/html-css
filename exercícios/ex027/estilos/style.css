@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+----------------------------
+
+Telas Pequenas: de 320px até 480px
+Celular: de 481px até 768px
+Tablet: de 769px até 1024px
+Desktop: 1025px até 1200px
+Telas Grandes: acima de 1201px
+
+Foto de Valeria Boltneva: https://www.pexels.com/pt-br/foto/flores-rosa-verdes-e-roxas-durante-o-dia-101472/
+
+Paleta de Cores:
+
+    --cor001:#ffffff;
+    --cor002:#000000;
+    --cor003:#E8E1DB;
+    --cor004:#BB0C54;
+    --cor005:#E78D9C;
+    --cor006:#890026;
+------------------------------
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+NL:wght@100..400&display=swap');
+
+
+
+:root{
+    --cor001:#ffffff;
+    --cor002:#000000;
+    --cor003:#E8E1DB;
+    --cor004:#BB0C54;
+    --cor005:#E78D9C;
+    --cor006:#890026;
+    --font001: "Montserrat", sans-serif;
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: var(--cor005);
+    height: 100vh;
+    width: 100vw;
+}
+
+h1{
+    color: var(--cor006);
+    font-family: var(--font001);
+    font-weight: bold;
+   
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+section#login{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: var(--cor001);
+    box-shadow: 0px 0px 8px var(--cor006);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+
+}
+
+section#login > div#imagem{
+    display: block;
+    background-image: url(../imagens/flor.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+
