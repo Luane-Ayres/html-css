@@ -30,6 +30,16 @@ Telas Grandes: acima de 1201px*/
             float: right;
             width: 70%;
         }
+
+        div#formulario > h1{
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        div#formulario > p{
+            font-size: 1.2em;
+        }
        
         
     }
@@ -44,12 +54,15 @@ Telas Grandes: acima de 1201px*/
         
         section#login{
             width:80vw;
+            
+            
 
         }
         section#login > div#imagem{
             float: left;
             width: 50%;
             height: 100%;
+            margin-right: 10px;
         }
 
         section#login > div#imagem{
@@ -57,4 +70,16 @@ Telas Grandes: acima de 1201px*/
             width: 50%;
             height: 100%;
         }
+
+        div#formulario > h1{
+            font-size: 2em;
+            
+        }
+        
+        div#formulario > p{
+            font-size: 1.2em;
+             text-align: justify;
+        }
+
+    
     }
