@@ -35,6 +35,7 @@ Paleta de Cores:
     --cor004:#BB0C54;
     --cor005:#E78D9C;
     --cor006:#890026;
+    
 
     --font001: "Montserrat", sans-serif;
 }
@@ -71,7 +72,10 @@ main{
     width: 100vw;
 
 }
-
+label{
+    font-size: 0.8em;
+    text-align: justify;
+}
 section#login{
     position: absolute;
     top:50%;
@@ -80,8 +84,9 @@ section#login{
     overflow: hidden;
 
     background-color: var(--cor001);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.483);
-    width: 250px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border: solid rgb(0, 0, 0);
+    width: 263px;
     height: 500px;
     border-radius: 20px;
 
@@ -103,15 +108,37 @@ section#login > div#imagem{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+    
+    
 }
 
 div#formulario > h1{
     text-align: center;
-    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 div#formulario > p{
-    font-size: 0.8em;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+    
+    
+}
+
+form > div > input[type= submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 25px;
+    background-color: var(--cor006);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-top: 20px;
     
 }
 
