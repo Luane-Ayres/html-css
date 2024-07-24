@@ -59,13 +59,15 @@ h1{
     font-family: var(--font001);
     font-weight: bold;
     text-align: center;
-    padding: 9px;
+    padding: 2px;
+    
    
 }
+
 p{
-    
     padding: 5px;
 }
+
 main{
     position: relative;
     height: 100vh;
@@ -114,19 +116,27 @@ section#login > div#formulario{
     
 }
 
-div#formulario > h1{
-    text-align: center;
-    padding-top: 5px;
-    padding-right: 0px;
-    padding-bottom: 5px;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-}
 
 div#formulario > p{
     font-size: 0.9em;
-    padding-bottom: 10px;  
+    padding-bottom: 5px;  
+}
+
+form > div.campo{
+    display: block;
+   background-color: var(--cor006);
+   padding-bottom: 7px;
+   margin: 5px 0px;
+   border-radius: 3px;
+   width: 100%;
+   box-shadow: 0px 2px 3px var(--cor002);
+   color: var(--cor001);
+   margin-top: 5px;
+   
+}
+
+div.campo > label{
+    display: none;
 }
 
 form > input[type= submit]{
@@ -139,7 +149,7 @@ form > input[type= submit]{
     border-radius: 3px;
     box-shadow: 0px 2px 3px var(--cor002);
     color: var(--cor001);
-    margin-top: 15px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -170,7 +180,6 @@ form > a.botao:hover{
 
 form > a.botao > span{
     font-size: 0.8em;
-    
     
 }
 
