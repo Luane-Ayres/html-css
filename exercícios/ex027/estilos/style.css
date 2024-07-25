@@ -171,7 +171,7 @@ form > div.campo > input{
     box-shadow: 0px 2px 3px var(--cor002);
     color: var(--cor001);
     margin-top: 5px;
-    padding-top: 2px;
+    padding-top: 3px;
     cursor: pointer;
     
 }
@@ -193,7 +193,7 @@ form > .botao{
     border-radius: 3px;
     box-shadow: 0px 2px 3px var(--cor002);
     margin-top: 5px;
-    padding-top: 6px;
+    padding-top: 7px;
     text-align: center;
     text-decoration: none;
 }

@@ -41,8 +41,17 @@ Telas Grandes: acima de 1201px*/
         div#formulario > p{
             font-size: 1.2em;
         }
-       
+
+        form > input[type= submit]{
+            padding-top: 4px;
+        }
+
+        form > .campo {
+            padding-top: 2px;
+        }
         
+ 
+
     }
 
     /* Configuração do Desktop */
@@ -90,10 +99,19 @@ Telas Grandes: acima de 1201px*/
             margin-top: 10px;
            
         }
+
+        form > input[type= submit]{
+        
+            padding-top: 3px;
+ 
+        }
+
       
         section#login > div#formulario{
             padding-right: 16px;
             padding-left: 0px;
             margin-right: -3px;
         }
+
+       
     }
