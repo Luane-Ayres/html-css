@@ -208,4 +208,12 @@ form > a.botao > span{
     
 }
 
+input[type = email]::placeholder{
+    color: var(--cor005);
+}
+
+
+input[type = password]::placeholder {
+    color: var(--cor005);
+  }
 
