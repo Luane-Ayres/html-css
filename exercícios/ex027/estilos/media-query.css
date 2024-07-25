@@ -33,8 +33,9 @@ Telas Grandes: acima de 1201px*/
 
         div#formulario > h1{
             text-align: center;
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            font-size: 2em;
+            padding-bottom: 7px;
+            
         }
         
         div#formulario > p{
@@ -67,20 +68,32 @@ Telas Grandes: acima de 1201px*/
 
         section#login > div#imagem{
             float: left;
-            width: 50%;
+            width: 45%;
             height: 100%;
         }
 
         div#formulario > h1{
             font-size: 2em;
+            padding-bottom: 7px;
             
         }
         
         div#formulario > p{
             font-size: 1.2em;
-            
-             text-align: justify;
+            text-align: justify;
         }
+       
 
-    
-    }
+        form{
+            float: right;
+            width: 53%;
+            margin-top: 10px;
+           
+        }
+      
+        section#login > div#formulario{
+            padding-right: 16px;
+            padding-left: 0px;
+            margin-right: -3px;
+        }
+       

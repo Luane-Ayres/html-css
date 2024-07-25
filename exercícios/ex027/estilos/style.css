@@ -56,6 +56,7 @@ body, html{
 
 h1{
     color: var(--cor006);
+    font-size: 1.8em;
     font-family: var(--font001);
     font-weight: bold;
     text-align: center;
@@ -75,11 +76,8 @@ main{
 
 }
 
-label{
-    font-size: 0.8em;
-    text-align: justify;
-}
 
+/*CONFIGURAÇÃO DA CAIXA DE SECTION*/
 section#login{
     position: absolute;
     top:50%;
@@ -89,9 +87,9 @@ section#login{
 
     background-color: var(--cor001);
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
-    border: solid #000000 3px;
+    border: solid var(--cor002) 3px;
     width: 263px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
 
     transition: width 0.3s; height: 0.3s;
@@ -99,6 +97,7 @@ section#login{
 
 }
 
+/*CONFIGURAÇÃO DA CAIXA DE IMAGEM*/
 section#login > div#imagem{
     display: block;
     background-image: url(../imagens/flor.jpg);
@@ -109,37 +108,59 @@ section#login > div#imagem{
     
 }
 
+/*CONFIGURAÇÃO DO ID FORMULARIO DENTRO DE SECTION#LOGIN*/
 section#login > div#formulario{
     display: block;
     padding: 10px;
-    
-    
 }
 
-
+/*Parágrafo */
 div#formulario > p{
     font-size: 0.9em;
     padding-bottom: 5px;  
 }
 
+/*FUNDO DA CAIXA DE TEXTO*/
 form > div.campo{
-    display: block;
+   display: block;
    background-color: var(--cor006);
-   padding-bottom: 7px;
+   box-shadow: 0px 2px 3px var(--cor002);
+   color: var(--cor001);
    margin: 5px 0px;
    border-radius: 3px;
    width: 100%;
-   box-shadow: 0px 2px 3px var(--cor002);
-   color: var(--cor001);
-   margin-top: 5px;
    
 }
 
+/*TEXTO invisível*/
 div.campo > label{
     display: none;
 }
 
-form > input[type= submit]{
+/* ÍCONES */
+form > div.campo > span{
+    
+    border-radius: 3px;
+    width: 40px;
+    height: 100%;
+    padding: 5px;
+}
+
+/*CAIXA DE TEXTO */
+form > div.campo > input{
+    font-size: 1em;
+    background-color: var(--cor006);
+    color: var(--cor001);
+    border: none;
+    border-radius: 3px;
+    height: 100%;
+    width: calc(100% - 50px);
+    transform: translateY(-5px);
+    
+}
+
+/*Botao ENTRAR*/
+    form > input[type= submit]{
     display: block;
     font-size: 1em;
     width: 100%;
@@ -153,11 +174,13 @@ form > input[type= submit]{
     cursor: pointer;
 }
 
+/*HOVER DO BOTÃO ENTRAR*/
 form > input[type = submit]:hover{
     background-color: var(--cor004);
     color: var(--cor001);
 }
 
+/*Botao ESQUECI A SENHA*/
 form > .botao{
     display: block;
     background-color: var(--cor006);
@@ -173,10 +196,12 @@ form > .botao{
     text-decoration: none;
 }
 
+/*HOVER DO BOTÃO ESQUECI A SENHA*/
 form > a.botao:hover{
     background-color: var(--cor004);
     color: var(--cor001);
 }
+
 
 form > a.botao > span{
     font-size: 0.8em;
