@@ -171,7 +171,9 @@ form > div.campo > input{
     box-shadow: 0px 2px 3px var(--cor002);
     color: var(--cor001);
     margin-top: 5px;
+    padding-top: 2px;
     cursor: pointer;
+    
 }
 
 /*HOVER DO BOTÃO ENTRAR*/
@@ -216,4 +218,5 @@ input[type = email]::placeholder{
 input[type = password]::placeholder {
     color: var(--cor005);
   }
+
 
