@@ -105,7 +105,7 @@ section#login > div#imagem{
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
-    box-shadow: 0px 2px 5px var(--cor006);
+    
 }
 
 /*CONFIGURAÇÃO DO ID FORMULARIO DENTRO DE SECTION#LOGIN*/
